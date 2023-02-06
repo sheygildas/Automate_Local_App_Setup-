@@ -7,7 +7,7 @@
 - [Tools](#hammer_and_wrench-Tools)
 - [Architecture of this project](#house-architecture-of-this-project)
 - [Steps to execute the project](#zap-steps-to-execute-the-project)
-  - [Clone source code](#package-slone-source-code)
+  - [Clone source code](#package-clone-source-code)
   - [Create bash script for DB](#package-create-bash-script-for-db)
   - [Create bash script for Memcache](#package-create-bash-script-for-memcache)
   - [Create bash script for RabbitMQ](#rabbit-create-bash-script-for-rabbitmq)
