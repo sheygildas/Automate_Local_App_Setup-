@@ -10,11 +10,12 @@
   - [Clone source code](#package-slone-source-code)
   - [Create bash script for DB](#package-create-bash-script-for-db)
   - [Create bash script for Memcache](#package-create-bash-script-for-memcache)
-  - [Create bash script for RabbitMQ](#package-create-bash-script-for-rabbitmq)
-  - [Create bash script for Tomcat](#package-create-bash-script-for-tomcat)
+  - [Create bash script for RabbitMQ](#rabbit-create-bash-script-for-rabbitmq)
+  - [Create bash script for Tomcat](#cat-create-bash-script-for-tomcat)
+  -  [Create bash script for Nginx](#earth_africa-create-bash-script-for-nginx)
   - [Create application properties file](#package-create-application-properties-file)
   - [Create the vagrant file to provision the VMs](#package-create-the-vagrant-file-to-provision-the-vms)
-  - [Bring up the Virtual machines ](#bulb-bring-up-the-virtual-machines)a
+  - [Bring up the Virtual machines ](#bulb-bring-up-the-virtual-machines)
   - [Validate](#heavy_check_mark-validate)
 - [Verify from browser](#earth_africa-verify-from-browser) 
 - [Resources](#page_facing_up-resources)
@@ -93,7 +94,7 @@
 </div>
 <br/>
 
-### Clone source code
+### :package: Clone source code
 
 - clone the repository from github through the gitbash 
 
@@ -122,7 +123,7 @@
 <br/>
 
 
-### Create bash script for the DB
+### :package: Create bash script for the DB
 
 - Create a script for mysql database with the tittle *mysql.sh*. The content  of the script is shown below.
 
@@ -163,7 +164,7 @@ sudo firewall-cmd --reload
 sudo systemctl restart mariadbBash Script for Memcached
    ```
 
-### Create bash script for Memcache
+### :package: Create bash script for Memcache
 
 - Create a script for memcached with the tittle *memcache.sh*. The content  of the script is shown below.
 
@@ -177,7 +178,7 @@ sudo systemctl status memcached
 sudo memcached -p 11211 -U 11111 -u memcached -d
    ```
 
-### Create bash script for RabbitMQ
+### :rabbit: Create bash script for RabbitMQ
 
 - Create a script for  RabbitMQ with the tittle *rabbitmq.sh*. The content  of the script is shown below.
 
@@ -201,7 +202,7 @@ sudo rabbitmqctl set_user_tags test administrator
 sudo systemctl restart rabbitmq-server
    ```
 
-### Create bash script for Tomcat
+### :cat: Create bash script for Tomcat
 
 - Create a script for tomcat with the tittle *tomcat.sh*. The content  of the script is shown below.
 
@@ -256,7 +257,7 @@ systemctl restart tomcat
 
    ```
    
-### Create bash script for Nginx
+### :earth_africa: Create bash script for Nginx
 
 - Create a script for nginx with the tittle *nginx.sh*. The content  of the script is shown below.
 
@@ -288,7 +289,7 @@ systemctl restart nginx
    ```
    
    
-### Create application properties file
+### :package: Create application properties file
 
 - Create application properties file with the tittle *application.propertiesh*. The content  of the script is shown below.
 
@@ -321,7 +322,7 @@ elasticsearch.node=vprofilenode
    ```
 - Note: If you made some changes to your backend configuration, make sure you update it in the application.properties file.
  
-### Create the Vagrant file to provision the VMs
+### :package: Create the Vagrant file to provision the VMs
 
 - Create a Vagrant file with the tittle *Vagrantfile*. The content  of the script is shown below.
 
