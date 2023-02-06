@@ -6,19 +6,16 @@
 - [Solution to the problem.](#key-solution-to-the-problem)
 - [Tools](#hammer_and_wrench-Tools)
 - [Architecture of this project](#house-architecture-of-this-project)
-- [Steps to Execute the project](#zap-steps-to-execute-the-project)
-  - [Setup tools ](#electric_plug-setup-tools )
+- [Steps to execute the project](#zap-steps-to-execute-the-project)
   - [Clone source code](#package-slone-source-code)
-  - [Go to the vagrant dir](#package-go-to-the-vagrant-dir)
+  - [Create bash script for DB](#package-create-bash-script-for-db)
+  - [Create bash script for Memcache](#package-create-bash-script-for-memcache)
+  - [Create bash script for RabbitMQ](#package-create-bash-script-for-rabbitmq)
+  - [Create bash script for Tomcat](#package-create-bash-script-for-tomcat)
+  - [Create application properties file](#package-create-application-properties-file)
+  - [Create the vagrant file to provision the VMs](#package-create-the-vagrant-file-to-provision-the-vms)
   - [Bring up the Virtual machines ](#bulb-bring-up-the-virtual-machines)a
   - [Validate](#heavy_check_mark-validate)
-  - [Setup All the services](#package-setup-all-the-services)
-    - [Mysql](#package-Mysql)
-    - [Memcached](#package-Memcached)
-    - [Rabbit MQ](#package-Rabbit-MQ)
-    - [Tomcat](#package-Tomcat)
-    - [Nginx](#package-Nginx)
-    - [Mysql](#package-Mysql)
 - [Verify from browser](#earth_africa-verify-from-browser) 
 - [Resources](#page_facing_up-resources)
 - [Acknowledgment](#star2-acknowledgment)
@@ -84,7 +81,7 @@
 </div>
 <br/>
 
-## Steps to Execute the project. 
+## Steps to execute the project. 
 
 ### Write the Bash Scripts for the Vitual Macchines
 
