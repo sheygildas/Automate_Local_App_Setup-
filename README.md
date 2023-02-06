@@ -30,7 +30,6 @@
 - This is a follow up project from the [local app setup](https://github.com/sheygildas/Local_App_Setup) project
 - This is a multi tier web application stack.
 - This project can be setup locally on a laptop/desktop
-- This project will serve as the baseline for the other projects in this series.
 
 <br/>
 <div align="right">
@@ -41,6 +40,8 @@
 
 ## Problem that this project solves 
 
+- You may not be comfortable making changes real-world systems.
+- Setting up applications manually on a local machine is time consuming and not repeatable.
 
 <br/>
 <div align="right">
@@ -50,6 +51,10 @@
 
 
 ## Solution to the problem.
+
+- This project is automated.
+- This project is also repeatable.
+- Also, this is an infrastructure as a code setup locally.
 
 <br/>
 <div align="right">
