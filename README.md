@@ -64,6 +64,10 @@
 
 ## :hammer_and_wrench: Tools
 
+- Oracle VM Virtualbox
+- Git bash
+- visual studio code
+- Vagrant
 
 <br/>
 <div align="right">
@@ -84,9 +88,10 @@
 
 ## Steps to Execute the project. 
 
-### Setup tools 
- Get tools at [https://example.com](https://example.com)
- 
+### Write the Bash Scripts for the Vitual Macchines
+
+- We will write the scripts to provision our VMs. You can check out the script for this project on the github repository given below.
+
 <br/>
 <div align="right">
     <b><a href="#project-02">↥ back to top</a></b>
@@ -95,8 +100,10 @@
 
 ### Clone source code
 
+- clone the repository from github through the gitbash 
+- 
   ```sh
-   npm install
+ git clone https://github.com/sheygildas/Local_App_Setup.git
    ```
    
    <br/>
@@ -105,8 +112,14 @@
 </div>
 <br/>
 
-### Change to the vagrant dir
+### Change to the Automated_provisioning dir
 
+- Change to the Automated_provisioning directory source code through the gitbash. Mine is at;
+
+ ```sh
+ f/vprofile-project/vagrant/Automated_provisioning (local-setup)
+   ```
+   
 <br/>
 <div align="right">
     <b><a href="#project-02">↥ back to top</a></b>
