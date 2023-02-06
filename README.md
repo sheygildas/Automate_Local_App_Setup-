@@ -19,8 +19,6 @@
     - [Tomcat](#package-Tomcat)
     - [Nginx](#package-Nginx)
     - [Mysql](#package-Mysql)
-- [App Build](#hammer-build)  
-- [App Deployment](#rocket-deployment) 
 - [Verify from browser](#earth_africa-verify-from-browser) 
 - [Resources](#page_facing_up-resources)
 - [Acknowledgment](#star2-acknowledgment)
