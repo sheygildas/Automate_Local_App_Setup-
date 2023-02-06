@@ -351,13 +351,17 @@ end
    ```
 ### :bulb: Bring up the Virtual machines 
 
-- Now, go to directory that our Vagrantfile.Mine is at;
+- Now, go to the repository that we cloned ealier and cd to the directory that our Vagrantfile is found.Mine is at;
 
 ```sh
  f/Local_App_Setup/vagrant/Automated_provisioning (local-setup)
    ```
-   
+-  RUN the command below to setup the VMs.
+*NOTE*:This will also bootstrap our servers with the meta data from our script and provision out App automatically.
 
+```sh
+ vagrant up
+   ```
 
 <br/>
 <div align="right">
