@@ -123,7 +123,7 @@
 <br/>
 
 
-### :package: Create bash script for the DB
+### :package: Create bash script for DB
 
 - Create a script for mysql database with the tittle *mysql.sh*. The content  of the script is shown below.
 
