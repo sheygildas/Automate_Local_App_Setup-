@@ -291,7 +291,40 @@ systemctl enable nginx
 systemctl restart nginx
 
    ```
- 
+   
+   
+### Create application properties file
+
+- Create application properties file with the tittle *application.propertiesh*. The content  of the script is shown below.
+
+```sh
+#JDBC Configutation for Database Connection
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://db01:3306/accounts?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+jdbc.username=admin
+jdbc.password=admin123
+
+#Memcached Configuration For Active and StandBy Host
+#For Active Host
+memcached.active.host=mc01
+memcached.active.port=11211
+#For StandBy Host
+memcached.standBy.host=127.0.0.2
+memcached.standBy.port=11211
+
+#RabbitMq Configuration
+rabbitmq.address=rmq01
+rabbitmq.port=5672
+rabbitmq.username=test
+rabbitmq.password=test
+
+#Elasticesearch Configuration
+elasticsearch.host =192.168.1.85
+elasticsearch.port =9300
+elasticsearch.cluster=vprofile
+elasticsearch.node=vprofilenode
+   ```
+- Note: If you made some changes to your backend configuration, make sure you update it in the application.properties file.
  
 ### Create the Vagrant file to provision the VMs
 
@@ -372,29 +405,33 @@ end
 
 ### :heavy_check_mark:Validate
 
-<br/>
-<div align="right">
-    <b><a href="#project-02">↥ back to top</a></b>
-</div>
-<br/>
+### :heavy_check_mark: Validate
 
+- validate the VMs one after the other with command vagrant ssh *<name_of_VM_given_in_Vagrantfile>* 
 
-### Setup All the services
-1. **Mysql** <br>
-2. **Memcached** <br>
-3. **Rabbit MQ** <br>
-4. **Tomcat** <br>
-5. **Nginx** <br>
+ ```sh
+vagrant ssh web01
+   ```
+- checke */etc/hosts* file of web01 using the command below, the */etc/hosts* file will be updated automatically.
+ ```sh
+cat /etc/hosts
+   ```
+- Now, try to ping *app01* from *web01* by running the command below.
+ ```sh
+ping app01
+   ```
+   
+![ping](https://github.com/sheygildas/Local_App_Setup/blob/local-setup/images/ping.jpg))
 
-<br/>
-<div align="right">
-    <b><a href="#project-02">↥ back to top</a></b>
-</div>
-<br/>
-
-
-
-## App Deployment
+- If you were able to connect to *app01* successfully then type *logout* on the terminal and try to ping other services similarly.
+- Lets connect to *app01* vbox and check connectivity of *app01* with *rmq01*, *db01* and *mc01*
+ ```sh
+cat /etc/hosts
+ping rmq01
+ping db01
+ping mc01
+logout
+   ```
 
 <br/>
 <div align="right">
@@ -405,29 +442,74 @@ end
 
 ## :earth_africa: Verify from browser
 
+- Login into *web01* (nginx) server, and run *ifconfig* to get its IP address. My case, the IP address of our web01 is : 192.168.56.11.
+
+```sh
+ifconfig
+   ``` 
+   
+- Validate whether Nginx is running by entering *http://<IP_of_Nginx_server>* on your browser .
+
+
+![Nginx](https://github.com/sheygildas/Local_App_Setup/blob/local-setup/images/Nginx.jpg))
+
+- Validate Db connection using credentials by entering *admin_vp* for both username and password on the login page.
+
+![Db%20connection](https://github.com/sheygildas/Local_App_Setup/blob/local-setup/images/Db%20connection.jpg))
+
+- On the page, Click on RabbitMQ to validate the connection.
+
+![Rabbit%20connection](https://github.com/sheygildas/Local_App_Setup/blob/local-setup/images/Rabbit%20connection.jpg))
+
+- Validate Memcache connection by clicking MemCache.
+
+![Memcache%20connection](https://github.com/sheygildas/Local_App_Setup/blob/local-setup/images/Memcache%20connection.jpg))
+
+- Click on the user ID AND validate if data is coming from Database.
+
+![Memcache%20connection%202](https://github.com/sheygildas/Local_App_Setup/blob/local-setup/images/Memcache%20connection%202.jpg)) 
 
 <br/>
 <div align="right">
     <b><a href="#project-02">↥ back to top</a></b>
+</div>
+<br/>
+
+
+## CleanUp
+
+- On the terminal, move to the directory carrying our vagrant file, and run the command below to destroy all virtual machines.
+
+
+```sh
+vagrant destroy
+   ``` 
+ ![clean](https://github.com/sheygildas/Local_App_Setup/blob/local-setup/images/clean.png))   
+   
+<br/>
+<div align="right">
+    <b><a href="#Project-01">↥ back to top</a></b>
 </div>
 <br/>
 
 
 ## :page_facing_up: Resources
 
+* [Check out  the source of this  project on Udemy](https://www.udemy.com/course/devopsprojects/)
+
 <br/>
 <div align="right">
-    <b><a href="#project-02">↥ back to top</a></b>
+    <b><a href="#Project-01">↥ back to top</a></b>
 </div>
 <br/>
 
-
 ## :star2: Acknowledgment
 
+Wish to thank Imran Teli for providing such a great [content](https://www.udemy.com/course/devopsprojects/)
 
 <br/>
 <div align="right">
-    <b><a href="#project-02">↥ back to top</a></b>
+    <b><a href="#Project-01">↥ back to top</a></b>
 </div>
 <br/>
 
