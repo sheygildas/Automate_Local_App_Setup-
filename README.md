@@ -403,8 +403,6 @@ end
 <br/>
 
 
-### :heavy_check_mark:Validate
-
 ### :heavy_check_mark: Validate
 
 - validate the VMs one after the other with command vagrant ssh *<name_of_VM_given_in_Vagrantfile>* 
