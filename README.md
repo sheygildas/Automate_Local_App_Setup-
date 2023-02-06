@@ -2,10 +2,10 @@
 ## :ledger: Index
 
 - [About The Project](#beginner-about-the-project)
-- [Problem that this project solves ](#beginner-problem-that-this-project-solves)
-- [Solution to the problem.](#beginner-solution-to-the-problem)
-- [Tools](#beginner-Tools)
-- [Architecture of this project](#beginner-architecture-of-this-project)
+- [Problem that this project solves ](#question-problem-that-this-project-solves)
+- [Solution to the problem.](#key-solution-to-the-problem)
+- [Tools](#hammer_and_wrench-Tools)
+- [Architecture of this project](#house-architecture-of-this-project)
 - [Steps to Execute the project](#zap-steps-to-execute-the-project)
   - [Setup tools ](#electric_plug-setup-tools )
   - [Clone source code](#package-slone-source-code)
@@ -21,7 +21,7 @@
     - [Mysql](#package-Mysql)
 - [App Build](#hammer-build)  
 - [App Deployment](#rocket-deployment) 
-- [Verify from browser](#rocket-verify-from-browser) 
+- [Verify from browser](#earth_africa-verify-from-browser) 
 - [Resources](#page_facing_up-resources)
 - [Acknowledgment](#star2-acknowledgment)
 
@@ -38,7 +38,7 @@
 <br/>
 
 
-## Problem that this project solves 
+## :question: Problem that this project solves 
 
 - You may not be comfortable making changes real-world systems.
 - Setting up applications manually on a local machine is time consuming and not repeatable.
@@ -50,7 +50,7 @@
 <br/>
 
 
-## Solution to the problem.
+## :key: Solution to the problem.
 
 - This project is automated.
 - This project is also repeatable.
@@ -62,7 +62,7 @@
 </div>
 <br/>
 
-## Tools
+## :hammer_and_wrench: Tools
 
 
 <br/>
@@ -156,7 +156,7 @@
 <br/>
 
 
-## :Verify from browser
+## :earth_africa: Verify from browser
 
 
 <br/>
@@ -166,7 +166,7 @@
 <br/>
 
 
-## Resources
+## :page_facing_up: Resources
 
 <br/>
 <div align="right">
@@ -175,7 +175,7 @@
 <br/>
 
 
-## Credit/Acknowledgment
+## :star2: Acknowledgment
 
 
 <br/>
