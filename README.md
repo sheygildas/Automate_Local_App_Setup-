@@ -101,12 +101,12 @@
 ### Clone source code
 
 - clone the repository from github through the gitbash 
-- 
-  ```sh
+
+```sh
  git clone https://github.com/sheygildas/Local_App_Setup.git
    ```
    
-   <br/>
+<br/>
 <div align="right">
     <b><a href="#project-02">↥ back to top</a></b>
 </div>
@@ -116,7 +116,7 @@
 
 - Change to the Automated_provisioning directory source code through the gitbash. Mine is at;
 
- ```sh
+```sh
  f/vprofile-project/vagrant/Automated_provisioning (local-setup)
    ```
    
