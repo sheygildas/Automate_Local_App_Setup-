@@ -471,7 +471,7 @@ ifconfig
 <br/>
 
 
-## CleanUp
+## :broom: CleanUp
 
 - On the terminal, move to the directory carrying our vagrant file, and run the command below to destroy all virtual machines.
 
